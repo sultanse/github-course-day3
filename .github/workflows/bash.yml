@@ -1,0 +1,30 @@
+name: First Bash
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  job1:
+    env:
+      MY_SECRET: ${{secrets.MY_SECRET}}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: step1
+        run: |
+          echo $MY_SECRET
+          touch step1.txt
+          echo "hi from step1" > step1.txt
+      - name: step2
+        run: |
+          cat step1.txt
+
+  job2:
+    if: github.event.pull.request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: step3
+        run: |
+          cat step1.txt

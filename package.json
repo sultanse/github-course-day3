@@ -1,0 +1,23 @@
+{
+  "name": "github-course-day3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sultanse/github-course-day3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sultanse/github-course-day3/issues"
+  },
+  "homepage": "https://github.com/sultanse/github-course-day3#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
